@@ -1,0 +1,15 @@
+<button (click)="toggleToDisplayTeachers()">Click to toggle isToDisplayTeachers</button>
+
+<div *ngIf=isToDisplayTeachers>
+    <h3>Teachers</h3>
+    <div *ngFor="let teacher of teachers">
+        <ul>
+            <li>Teachers ID: {{teacher.teacherId}}</li>
+            <li>Teachers First Name: {{teacher.name}}</li>
+            <li>Teachers Last Name: {{teacher.lastname}}</li>
+            <li>Teachers Salary: ${{teacher.salary}}</li>
+            <li>Teachers Age: {{teacher.age}}</li>
+            <li>Full Time: {{teacher.isFullTime}}</li>
+        </ul>
+    </div>
+</div>
